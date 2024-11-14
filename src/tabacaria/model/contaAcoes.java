@@ -1,12 +1,15 @@
 package tabacaria.model;
 
+import java.util.Scanner;
+
 public class contaAcoes extends Conta {
 
 	public contaAcoes(String nome, int idade, int saldo) {
 		super(nome, idade, saldo);
 
 	}
-
+	
+	
 	public boolean comprar(float valor) {
 
 		if (this.getSaldo() < valor) {
@@ -26,6 +29,13 @@ public class contaAcoes extends Conta {
 	public void visualizar() {
 
 		System.out.println(getSaldo());
+	}
+
+
+
+	public void cadastrar(contaAcoes conta1) {
+		// TODO Auto-generated method stub
+		
 	}
   
 
